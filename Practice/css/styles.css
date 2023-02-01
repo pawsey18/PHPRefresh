@@ -1,0 +1,181 @@
+body {
+	margin: 3px 3px 0 3px;
+	padding: 3px 3px 0 3px;
+	font-family: Verdana, Helvetica, Sans-serif;
+	font-size: medium;
+	line-height: 1.7em;
+}
+
+p {
+	text-indent: .9em;
+}
+
+img {
+	border: thin solid black;
+}
+
+div.col1 {
+	overflow: auto;
+	padding: 1% 1% 1% 1%;
+}
+
+.err {
+	color: Red;
+	font-size: larger;
+}
+.articleName{
+ 
+  padding-left:2%;
+
+}
+
+td {
+	vertical-align: top;
+}
+
+.header {
+	background-color: black;
+	width: 100%;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	margin-right: auto;
+	margin-left: auto;
+	border: thin solid black;
+	padding: 1%;
+	text-align: center;
+	border: thin solid black;
+}
+
+.fl {
+	font-size: 1.5em;
+	color: white;
+	font-weight: bold;
+}
+
+.wrapper {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.col1 {
+	float: left;
+	width: 50%;
+	height: 50%;
+	margin-left: 3%;
+	margin-top: .5%;
+	background-color: rgb(141, 142, 144);
+	border: thin solid black;
+}
+
+.col {
+	float: left;
+	width: 90%;
+	margin-left: 3%;
+	margin-top: 1px;
+	background-color: rgb(141, 142, 144);
+	border: thin solid black;
+}
+
+.col2 {
+	float: left;
+	width: 33%;
+	margin-top: .5%;
+	margin-left: 5%;
+	background-color: rgb(141, 142, 144);
+	border: thin solid black;
+	text-align: center;
+}
+
+.colHeader {
+	width: 80%;
+	background-color: black;
+	color: white;
+	border: thin solid black;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1%;
+	margin-bottom: 1px;
+	font-weight: bold;
+}
+
+.colFooter {
+	width: 80%;
+	/*	height:40px; */
+	background-color: rgb(141, 142, 144);
+	text-align: left;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	margin-left: auto;
+	margin-right: auto;
+	line-height: 1em;
+	font-size: .9em;
+	font-style: italic;
+	padding-left: 3px;
+	padding-right: 3px;
+}
+
+a {
+	text-decoration: none;
+	padding: 2px 5px;
+	margin-top: 10px;
+}
+
+a:link {
+	color: white;
+}
+
+a:visited {
+	
+}
+
+a:hover.spaceLinks {
+	color: white;
+	background-color: rgb(141, 142, 144);
+	border: thin solid white;
+}
+
+a:link.spaceLinks {
+	color: white;
+	border: thin solid black;
+}
+
+a:visited.spaceLinks {
+	color: yellow;
+	border: thin solid black;
+}
+
+a:hover.contentLinks {
+	color: white;
+	background-color: black;
+	border: thin solid black;
+}
+
+a:visited.contentLinks {
+	border-color: rgb(141, 142, 144);
+}
+
+.contentLinks {
+	border-color: rgb(141, 142, 144);
+}
+
+.footer p{
+	background-color: black;
+	color:white;
+	height: 30px;
+	width: 100%;
+	margin-top: 1px;
+	margin-right: 2px;
+	border: thin solid black;
+	clear: both;
+	text-align: center;
+}
+
+.maxWell {
+	width: 800px;
+	height: 50px;
+	color: rgb(141, 142, 144);
+	letter-spacing: .2em;
+	filter: dropshadow(color = white, offx = 3, offy = 3, positive = true);
+}
