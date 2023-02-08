@@ -1,10 +1,10 @@
 <html>
 <?php
 $pageTitle = 'Home';
-include
-    'includes/openConnection.php';
-'includes/header.php';
+include 'includes/header.php';
+
 ?>
+<?php include 'includes/openConnection.php'; ?>
 
 <?php
 $sql = "SELECT * FROM  articles";
@@ -75,7 +75,7 @@ $result = $conn->query($sql);
                                 $id = 0;
 
                                 if (!empty($_POST['articleList'])) {
-                                    $id = $_POST['articleList'];;
+                                    $id = $_POST['articleList'];
                                 }
 
                                 while ($row = $result->fetch_assoc()) {
@@ -90,14 +90,13 @@ $result = $conn->query($sql);
                                 <?php
                                 }
                                 ?>
-                            </select>
+                            </select><input type="submit" name="submit" value="submit" />
                         </div>
                     </div>
                 </div>
-                <input type="submit" name="submit" value="submit" />
             </div>
-        </div>
-    </form>
-</body>
 
-</html>
+            <div style="text-align:center">
+                <?php
+                include "includes/footer.php";
+                ?>

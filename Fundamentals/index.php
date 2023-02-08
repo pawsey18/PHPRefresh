@@ -43,7 +43,45 @@ include './dbConnect.php';
                     ?>
                 </select>
 
-                <?php //echo  "<script>console.log('Debug Objects: " . $id . "' );</script>"; 
+                <?php
+
+                function longdate($timestamp)
+                {
+                    return date("l F jS Y", $timestamp);
+                }
+                echo longdate(time() - 17 * 24 * 60 * 60);
+
+                $id = $_GET['id'];
+                echo 'the id is ' . $id;
+
+                $varOne = "1";
+                $varOne = 1;
+                echo var_dump($varOne);
+                echo "hello ", "hi ", "hi ", "hi ", "hello ";
+                echo "the person said \"Hello\", also the variable value is $varOne";
+
+                $object = new User;
+                print_r($object);
+                echo "<br>";
+
+                $object->name = "John";
+                $object->password = "pass";
+                var_dump($object);
+                echo "<br>";
+
+                $object->saveUser();
+
+                class User
+                {
+                    public $name, $password;
+
+                    function saveUser()
+                    {
+                        echo "save the user";
+                    }
+                }
+                echo "<br>";
+                echo $object->name;
                 ?>
             </div>
 
